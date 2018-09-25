@@ -9,12 +9,9 @@ Motivated by the Kaggle Housing Prices competition, this project predicts housin
 			the predicted value and the logarithm of the observed sales price.
 
  Submission File Format: The file should contain a header and have the following format:
-	Id, Saleprice
-	
+ 
+	Id, Saleprice	
 	1461, 169000.1
-	
 	1462, 187724.1233
-	
 	1463, 175221
-	
 	etc.
