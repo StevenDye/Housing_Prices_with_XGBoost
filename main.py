@@ -2,11 +2,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
+import xgboost as xgb
 import warnings
 from scipy import stats
 from scipy.special import boxcox1p
 from sklearn.model_selection import KFold, cross_val_score
 from sklearn.preprocessing import LabelEncoder
+
 warnings.filterwarnings('ignore')
 
 # Import Dataset
@@ -205,7 +207,6 @@ def rmsle_cv(model):
     return rmse
 
 # XGBoost
-import xgboost as xgb
 model_xgb = xgb.XGBRegressor(random_state = 1)
 score = rmsle_cv(model_xgb)
 score.mean()
